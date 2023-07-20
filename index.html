@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+<body>
+    <h1>App</h1>
+    <button onclick="handleClick()">Login</button>
+</body>
+<script>
+    const handleClick = () => {
+        document.cookie = "User=John; path=/; domain:.netlify.app"
+        console.log("User logged in succesfully!", document.cookie);
+    }
+</script>
+</html>
