@@ -20,7 +20,7 @@
         };
 
         // Store the user data in a SameSite cookie for cross-origin communication
-        document.cookie = "myCookie=myValue; domain=.vercel.app; path=/; SameSite=None; Secure";
+        document.cookie = `myCookie=myValue; domain=".vercel.app"; path="/"; SameSite=None; Secure`;
         
         console.log("User logged in succesfully!", document.cookie);
     }
