@@ -20,9 +20,9 @@
         };
 
         // Store the user data in a SameSite cookie for cross-origin communication
-        document.cookie = "User=John; path=/; domain:.vercel.app"
+        document.cookie = `UserId=${user}; domain=zipy.ai; path=/`;
         
-        console.log("User logged in succesfully!", document.cookie);
+        console.log(`User ${user.username} logged in succesfully!`);
     }
 </script>
 
