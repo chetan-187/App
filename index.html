@@ -20,7 +20,7 @@
         };
 
         // Store the user data in a SameSite cookie for cross-origin communication
-        document.cookie = `user=${JSON.stringify(user)}; SameSite=None; Secure`;
+        document.cookie = `user=${JSON.stringify(user)}; domain=.vercel.app; path=/; Secure; SameSite=None`;
         
         console.log("User logged in succesfully!", document.cookie);
     }
