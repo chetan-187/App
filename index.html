@@ -5,25 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App</title>
+    <script src="https://storage.googleapis.com/zipy-dev-sdk/Beta.Session.Merging.SDK/zipy.min.umd.js" crossorigin="anonymous"></script> 
+    <script> window.zipy && window.zipy.init('8b4470bc', ".vercel.app");</script>
 </head>
 
 <body>
     <h1>App</h1>
-    <button onclick="handleClick()">Login</button>
+    <button>Login Button</button>
 </body>
-<script>
-    const handleClick = () => {
-
-        const user = {
-            id: 123,
-            username: 'john_doe',
-        };
-
-        // Store the user data in a SameSite cookie for cross-origin communication
-        document.cookie = `UserId=${user}; domain=vercel.app; path=/`;
-        
-        console.log(`User ${user.username} logged in succesfully!`);
-    }
-</script>
-
 </html>
